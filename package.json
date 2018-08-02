@@ -1,0 +1,20 @@
+{
+  "name": "protractor101_demo",
+  "version": "1.0.0",
+  "description": "Demo tests",
+  "main": "conf.js",
+
+  "devDependencies": {
+    "jasmine": "^3.1.0",
+    "jasmine-reporters": "^2.2.1",
+    "jasmine-spec-reporter": "^4.2.1",
+    "protractor": "5.1.1",
+    "protractor-browser-logs": "^1.0.351",
+    "protractor-jasmine2-html-reporter": "0.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:anarang/protractor101-demo.git"
+  },
+  "author": "Anisha Narang"
+}
