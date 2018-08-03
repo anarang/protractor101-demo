@@ -1,10 +1,12 @@
+'use strict';
+
+var angularHomepage = require('./pages/pageObjectFile');
 describe('Angular Sample application::', function() {
   it('The resulting text should match "Hello Anisha!"', function() {
-    browser.get('https://angularjs.org/');
-    //browser.sleep(5); // sleep is added only for demo purposes
-    element(by.model('yourName')).sendKeys('Anisha');
-    browser.sleep(15); // sleep is added only for demo purposes
+    angularHomepage.get();
 
-    expect(element(by.binding('yourName')).getText()).toEqual('Hello Anisha!');
+    angularHomepage.setName('Anisha');
+
+    expect(angularHomepage.getGreetingText()).toEqual('Hello Anisha!');
   });
 });
